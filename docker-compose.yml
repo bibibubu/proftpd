@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  proftpd:
+   image: bibibubu/proftpd:latest
+   ports:
+     - '20:20'
+     - '21:21'
+     - '49152-49162:49152-49162'
+   environment:
+     - USER_NAME=memorityps
+     - USER_PWD=iamSAAS2013!
+     - LOG_DIR="/logs"
+     - SERVER_NAME=192.168.10.5
+   volumes:
+     - '.:/logs'
+                
