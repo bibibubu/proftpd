@@ -8,8 +8,8 @@ services:
      - '21:21'
      - '49152-49162:49152-49162'
    environment:
-     - USER_NAME=memorityps
-     - USER_PWD=iamSAAS2013!
+     - USER_NAME=myftpuser
+     - USER_PWD=f7p_p@ss
      - LOG_DIR="/logs"
      - SERVER_NAME=192.168.10.5
    volumes:
